@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery</title>
+    <link rel="stylesheet" href="../BasicSyntax/style.css">
+
+
+</head>
+<body>
+
+  <h1>jQuery Syntax</h1>
+
+  <div class="test1">
+      <h2>Text Box 1</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex quaerat nisi cupiditate iste corporis commodi!</p>
+
+  </div>
+
+  <div class="test2">
+    <h2>Text 2</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe consectetur ipsum sed aliquam corporis maxime, asperiores consequatur beatae vitae impedit obcaecati cumque facere non pariatur adipisci laborum eveniet, sapiente quis!</p>
+  </div>
+
+
+ <!-- JQUERY link -->
+ <script src="../jquery.js"></script>
+<script>
+    // $(document).ready(function(){
+    //     console.log("Welcome to jQuery class!");
+    // });
+
+    $(document).ready(function(){
+      let t1= $(".test1").html();
+      let t2 = $(".test2").html();
+
+      console.log(` ${t1} ${t2}`);
+
+    });
+</script>
+</body>
+</html>
